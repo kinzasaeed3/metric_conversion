@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <title>FAQs</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/faqs.css">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-toggle collapsed">
+            <div class="sidebar-logo">
+                <a href="#">Metric Conversion</a>
+            </div>
+            <ul class="sidebar-navigation">
+                <li class="sidebar-header">Pages</li>
+
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="articles.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Conversion</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/conversions/length.html" class="sidebar-link sidebar-all">Length</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/area.html" class="sidebar-link sidebar-all">Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/volume.html" class="sidebar-link sidebar-all">Volume</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/mass.html" class="sidebar-link sidebar-all">Mass</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/temperature.html" class="sidebar-link sidebar-all">Temperature</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/currency.html" class="sidebar-link sidebar-all">Currency</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="history.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-history"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="faqs.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQs</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="loader" class="loader">
+                <div class="lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Sidebar Navigation Ends -->
+        </aside>
+
+
+        <!-- Sidebar Ends -->
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand">
+                <button class="toggler-btn" type="button">
+                    <i class="lni lni-text-align-left"></i>
+                </button>
+            </nav>
+            <main class="p-3">
+                <div class="container-fluid">
+                    <img src="/assets/images/blackImage.jpg" alt="Descriptive text about the image" class="img img-fluid">
+                    <label id="label">
+                        <input type="checkbox" id="inp">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+
+
+
+
+                <div class="container my-5">
+                    <h1 class="text-center text-light mt-5 mb-2" id="text" data-aos="fade-up">FAQs</h1>
+                </div>
+
+                <div class="container my-5">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    How do I enter numbers in Scientific Notation?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Scientific notation is a way of expressing very large or very small numbers
+                                    in a compact form. In scientific notation, a number is written as the product of two
+                                    numbers: a coefficient and 10 raised to a power.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    What is a knot? What is a nautical mile?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    A knot is a unit of speed used in maritime and aviation contexts, equivalent
+                                    to one nautical mile per hour. One nautical mile is based on the circumference of
+                                    the Earth and is equal to one minute of latitude. Specifically, one nautical mile is
+                                    equivalent to 1.852 kilometers or 1.1508 miles.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    What about rainfall? How do I convert between inches of rain and millimeters of
+                                    rain?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Rainfall is often measured in either inches or millimeters. To convert
+                                    between these two units: To convert inches to millimeters, multiply the number of
+                                    inches by 25.4 (since 1 inch is equal to 25.4 millimeters). To convert millimeters
+                                    to inches, divide the number of millimeters by 25.4. For example, 2 inches of rain
+                                    is equal to 2 × 25.4 = 50.8 millimeters of rain, and 50 millimeters of rain is equal
+                                    to 50 / 25.4 ≈ 1.97 inches of rain.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What is the difference between the long ton, short ton, and metric ton?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Long Ton (Imperial Ton): Used primarily in the UK, a long ton is equivalent
+                                    to 2,240 pounds (1,016 kilograms). Short Ton (US Ton): Used primarily in the United
+                                    States, a short ton is equivalent to 2,000 pounds (907.185 kilograms). Metric Ton
+                                    (Tonne): Used worldwide, a metric ton is equivalent to 1,000 kilograms (2,204.62
+                                    pounds).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    At what temperature are Celsius and Fahrenheit the same?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Celsius and Fahrenheit are two different scales for measuring temperature.
+                                    They intersect at one point where they read the same value. This occurs at -40
+                                    degrees, meaning −40°C = −40°F.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    How do I convert between pounds and kilograms?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert pounds to kilograms, multiply the number of pounds by 0.45359237
+                                    (since 1 pound is equal to 0.45359237 kilograms). To convert kilograms to pounds,
+                                    multiply the number of kilograms by 2.20462. For example, 10 pounds is equal to 10 ×
+                                    0.45359237 = 4.5359237 kilograms, and 5 kilograms is equal to 5 × 2.20462 = 11.0231
+                                    pounds.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                    aria-controls="flush-collapseSeven">
+                                    How do I convert between liters and gallons?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert liters to gallons, multiply the number of liters by 0.264172
+                                    (since 1 liter is equal to 0.264172 gallons). To convert gallons to liters, multiply
+                                    the number of gallons by 3.78541. For example, 5 liters is equal to 5 × 0.264172 =
+                                    1.32086 gallons, and 2 gallons is equal to 2 × 3.78541 = 7.57082 liters.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                    aria-controls="flush-collapseEight">
+                                    How do I convert between miles and kilometers?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert miles to kilometers, multiply the number of miles by 1.60934
+                                    (since 1 mile is equal to 1.60934 kilometers). To convert kilometers to miles,
+                                    multiply the number of kilometers by 0.621371. For example, 3 miles is equal to 3 ×
+                                    1.60934 = 4.82802 kilometers, and 10 kilometers is equal to 10 × 0.621371 = 6.21371
+                                    miles.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                    aria-controls="flush-collapseNine">
+                                    How do I convert between ounces and grams?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert ounces to grams, multiply the number of ounces by 28.3495 (since
+                                    1 ounce is equal to 28.3495 grams). To convert grams to ounces, multiply the number
+                                    of grams by 0.03527396. For example, 4 ounces is equal to 4 × 28.3495 = 113.398
+                                    grams, and 200 grams is equal to 200 × 0.03527396 = 7.05479 ounces.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                    aria-controls="flush-collapseTen">
+                                    How do I convert between square feet and square meters?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert square feet to square meters, multiply the number of square feet
+                                    by 0.092903 (since 1 square foot is equal to 0.092903 square meters). To convert
+                                    square meters to square feet, multiply the number of square meters by 10.7639. For
+                                    example, 100 square feet is equal to 100 × 0.092903 = 9.2903 square meters, and 5
+                                    square meters is equal to 5 × 10.7639 = 53.8195 square feet.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                                    aria-controls="flush-collapseEleven">
+                                    How do I convert between cubic inches and cubic centimeters?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert cubic inches to cubic centimeters, multiply the number of cubic
+                                    inches by 16.3871 (since 1 cubic inch is equal to 16.3871 cubic centimeters). To
+                                    convert cubic centimeters to cubic inches, multiply the number of cubic centimeters
+                                    by 0.0610237. For example, 10 cubic inches is equal to 10 × 16.3871 = 163.871 cubic
+                                    centimeters, and 100 cubic centimeters is equal to 100 × 0.0610237 = 6.10237 cubic
+                                    inches.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwelve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                                    aria-controls="flush-collapseTwelve">
+                                    How do I convert between hectares and acres?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert hectares to acres, multiply the number of hectares by 2.47105
+                                    (since 1 hectare is equal to 2.47105 acres). To convert acres to hectares, multiply
+                                    the number of acres by 0.404686. For example, 2 hectares is equal to 2 × 2.47105 =
+                                    4.9421 acres, and 5 acres is equal to 5 × 0.404686 = 2.02343 hectares.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThirteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThirteen" aria-expanded="false"
+                                    aria-controls="flush-collapseThirteen">
+                                    How do I convert between joules and calories?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThirteen" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert joules to calories, multiply the number of joules by 0.239006
+                                    (since 1 joule is equal to 0.239006 calories). To convert calories to joules,
+                                    multiply the number of calories by 4.184. For example, 100 joules is equal to 100 ×
+                                    0.239006 = 23.9006 calories, and 50 calories is equal to 50 × 4.184 = 209.2 joules.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFourteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFourteen" aria-expanded="false"
+                                    aria-controls="flush-collapseFourteen">
+                                    How do I convert between kilowatts and horsepower?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFourteen" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert kilowatts to horsepower, multiply the number of kilowatts by
+                                    1.34102 (since 1 kilowatt is equal to 1.34102 horsepower). To convert horsepower to
+                                    kilowatts, multiply the number of horsepower by 0.7457. For example, 5 kilowatts is
+                                    equal to 5 × 1.34102 = 6.7051 horsepower, and 10 horsepower is equal to 10 × 0.7457
+                                    = 7.457 kilowatts.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFiveteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFiveteen" aria-expanded="false"
+                                    aria-controls="flush-collapseFiveteen">
+                                    How do I convert between bar and psi?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFiveteen" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFiveteen" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    To convert bar to psi (pounds per square inch), multiply the number of bar
+                                    by 14.5038 (since 1 bar is equal to 14.5038 psi). To convert psi to bar, multiply
+                                    the number of psi by 0.0689476. For example, 2 bar is equal to 2 × 14.5038 = 29.0076
+                                    psi, and 30 psi is equal to 30 × 0.0689476 = 2.06843 bar.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="border-top: 2px solid white;"></div>
+
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #000000">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Metric Conversion
+                            </h6>
+                            <p>
+                                Metric conversion is the process of converting measurements between metric units,
+                                utilizing prefixes like kilo-, centi-, and milli- for different scales within the
+                                decimal system.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Links
+                            </h6>
+                            <p>
+                                <a href="index.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Home</a>
+                            </p>
+                            <p>
+                                <a href="articles.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Articles</a>
+                            </p>
+                            <p>
+                                <a href="/conversions/length.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Conversion</a>
+                            </p>
+                            <p>
+                                <a href="history.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">History</a>
+                            </p>
+                            <p>
+                                <a href="faqs.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">FAQs</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Contact
+                            </h6>
+                            <p><i class="fas fa-home mr-3"></i> Aptech Learning Pakistan</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@aptech-education.com.pk</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-lg-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Subscription</h6>
+
+                            <form class="subscribe">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control my-4" placeholder="Your name">
+                                    <span id="nameError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="email" class="form-control my-4"
+                                        placeholder="Your e-mail address">
+                                    <span id="emailError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control my-4"
+                                        placeholder="Your message"></textarea>
+                                    <span id="messageError" class="error-message"></span>
+                                </div>
+                                <div class=" mt-5 mb-2">
+                                    <a style="--clr:#ffffff" id="subscribeButton"
+                                        class="btn"><span>subscribe</span><i></i></a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <hr class="container" style="color: white;">
+            <div class="text-center p-3 mt-2">
+                © 2024 Copyright :
+                <a class="text-white" href="index.html">Metric Conversion</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("r4ECdZN704rVp4X0u");
+        })();
+
+        // Your email subscription logic
+        document.getElementById('subscribeButton').addEventListener('click', function () {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const message = messageInput.value.trim();
+
+            // Clear previous error messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            let isValid = true;
+
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Please enter your name.';
+                isValid = false;
+            } else if (!isNaN(name)) { // Check if name is a number
+                document.getElementById('nameError').textContent = 'Name cannot be a number.';
+                isValid = false;
+            }
+
+            // Validate email
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Please enter your e-mail address.';
+                isValid = false;
+            } else if (!validateEmail(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid e-mail address.';
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                document.getElementById('messageError').textContent = 'Please enter your message.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Send the email
+                emailjs.send("service_x6a9hll", "template_cf0ai7v", {
+                    user_name: name,
+                    user_email: email,
+                    user_message: message
+                })
+                    .then(function (response) {
+                        console.log('Email sent successfully:', response);
+                        alert('Thank you for subscribing!');
+                        nameInput.value = ''; // Clear the name input field
+                        emailInput.value = ''; // Clear the email input field
+                        messageInput.value = ''; // Clear the message input field
+                    }, function (error) {
+                        console.error('Failed to send the email:', error);
+                        alert('Failed to send the email. Please try again later.');
+                    });
+            }
+        });
+
+        // Function to validate email format
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+    <script src="assets/js/faqs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
+    <title>Temperature Conversion</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/conversion/temperature.css">
+</head>
+
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-toggle collapsed">
+            <div class="sidebar-logo">
+                <a href="/index.html">Metric Conversion</a>
+            </div>
+            <ul class="sidebar-navigation">
+                <li class="sidebar-header">Pages</li>
+
+                <li class="sidebar-item">
+                    <a href="/index.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="/articles.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Conversion</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/conversions/length.html" class="sidebar-link sidebar-all">Length</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/area.html" class="sidebar-link sidebar-all">Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/volume.html" class="sidebar-link sidebar-all">Volume</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/mass.html" class="sidebar-link sidebar-all">Mass</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/temperature.html" class="sidebar-link sidebar-all">Temperature</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/currency.html" class="sidebar-link sidebar-all">Currency</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="/history.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-history"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="/faqs.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQs</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div id="loader100" class="loader100">
+                <div class="lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Sidebar Navigation Ends -->
+        </aside>
+        <!-- Sidebar Ends -->
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand">
+                <button class="toggler-btn" type="button">
+                    <i class="lni lni-text-align-left"></i>
+                </button>
+            </nav>
+            <main class="p-3">
+                <div class="container-fluid">
+                    <img src="/assets/images/blackImage.jpg" alt="Descriptive text about the image"
+                        class="img img-fluid">
+                    <label id="label">
+                        <input type="checkbox" id="inp">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+
+                <div class="container">
+                    <h1 class="text-center text-light mt-5 mb-2" id="text">Unit Converter Express Version</h1>
+                    <br>
+                    <div class="container my-3 mb-5 text-center">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/length.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>LENGTH</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/area.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>AREA</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/volume.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>VOLUME</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/mass.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>MASS</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/temperature.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>TEMPERATURE</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="/conversions/currency.html" style="--clr:#ffffff" id="a"
+                                    class="btn sidebar-all"><span>CURRENCY</span><i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-5">
+                    <div class="conversion-container" id="box">
+                        <h1 class="text-center mb-5" id="text1">Temperature Conversion</h1>
+                        <form>
+                            <div class="mb-4">
+                                <label for="value" class="form-label fs-4" id="inputTxt">Enter Value</label>
+                                <input type="number" id="value" class="form-control" placeholder="Enter Value">
+                                <span id="error"></span>
+                            </div>
+                            <div class="my-5">
+                                <label for="conversionType" class="form-label fs-4" id="inputTxt">From</label>
+                                <select id="conversionType" class="form-control" onchange="showFormula()">
+                                    <option value="celsiusToFahrenheit" id="celsiusToFahrenheit">Celsius to Fahrenheit
+                                    </option>
+                                    <option value="fahrenheitToCelsius" id="fahrenheitToCelsius">Fahrenheit to Celsius
+                                    </option>
+                                </select>
+
+                            </div>
+                            <div id="formula" class="my-5"></div>
+                            <div class="text-center">
+                                <button type="button" class="btn" id="a" style="--clr:#ffffff" onclick="convert()">
+                                    <span>CONVERT</span><i></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="text-center my-5 myResult">
+                            <span id="result1">
+                                <span id="result2"></span>
+                                <span id="result"></span>
+                            </span>
+                            <i class="fas fa-cog settings-icon" id="setting-icon" style="display:none;"></i>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="border-top: 2px solid white;"></div>
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #000000">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Metric Conversion
+                            </h6>
+                            <p>
+                                Metric conversion is the process of converting measurements between metric units,
+                                utilizing prefixes like kilo-, centi-, and milli- for different scales within the
+                                decimal system.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Links
+                            </h6>
+                            <p>
+                                <a href="/index.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Home</a>
+                            </p>
+                            <p>
+                                <a href="/articles.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Articles</a>
+                            </p>
+                            <p>
+                                <a href="/conversions/length.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Conversion</a>
+                            </p>
+                            <p>
+                                <a href="/history.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">History</a>
+                            </p>
+                            <p>
+                                <a href="/faqs.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">FAQs</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Contact
+                            </h6>
+                            <p><i class="fas fa-home mr-3"></i> Aptech Learning Pakistan</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@aptech-education.com.pk</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-lg-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Subscription</h6>
+
+                            <form class="subscribe">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control my-4" placeholder="Your name">
+                                    <span id="nameError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="email" class="form-control my-4"
+                                        placeholder="Your e-mail address">
+                                    <span id="emailError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control my-4"
+                                        placeholder="Your message"></textarea>
+                                    <span id="messageError" class="error-message"></span>
+                                </div>
+                                <div class=" mt-5 mb-2">
+                                    <a style="--clr:#ffffff" id="subscribeButton"
+                                        class="btn"><span>subscribe</span><i></i></a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <hr class="container" style="color: white;">
+            <div class="text-center p-3 mt-2">
+                © 2024 Copyright :
+                <a class="text-white" href="/index.html">Metric Conversion</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("r4ECdZN704rVp4X0u");
+        })();
+
+        // Your email subscription logic
+        document.getElementById('subscribeButton').addEventListener('click', function () {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const message = messageInput.value.trim();
+
+            // Clear previous error messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            let isValid = true;
+
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Please enter your name.';
+                isValid = false;
+            } else if (!isNaN(name)) { // Check if name is a number
+                document.getElementById('nameError').textContent = 'Name cannot be a number.';
+                isValid = false;
+            }
+
+            // Validate email
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Please enter your e-mail address.';
+                isValid = false;
+            } else if (!validateEmail(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid e-mail address.';
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                document.getElementById('messageError').textContent = 'Please enter your message.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Send the email
+                emailjs.send("service_x6a9hll", "template_cf0ai7v", {
+                    user_name: name,
+                    user_email: email,
+                    user_message: message
+                })
+                    .then(function (response) {
+                        console.log('Email sent successfully:', response);
+                        alert('Thank you for subscribing!');
+                        nameInput.value = ''; // Clear the name input field
+                        emailInput.value = ''; // Clear the email input field
+                        messageInput.value = ''; // Clear the message input field
+                    }, function (error) {
+                        console.error('Failed to send the email:', error);
+                        alert('Failed to send the email. Please try again later.');
+                    });
+            }
+        });
+
+        // Function to validate email format
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+    <script src="/assets/js/conversion/temperature.js"></script>
+
+
+</body>
+
+</html>

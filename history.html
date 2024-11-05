@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <title>History</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/history.css">
+</head>
+
+<body>
+
+    <div class="d-flex" id="articles">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-toggle collapsed">
+            <div class="sidebar-logo">
+                <a href="#">Metric Conversion</a>
+            </div>
+            <ul class="sidebar-navigation">
+                <li class="sidebar-header">Pages</li>
+
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="articles.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Conversion</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/conversions/length.html" class="sidebar-link sidebar-all">Length</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/area.html" class="sidebar-link sidebar-all">Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/volume.html" class="sidebar-link sidebar-all">Volume</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/mass.html" class="sidebar-link sidebar-all">Mass</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/temperature.html" class="sidebar-link sidebar-all">Temperature</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/conversions/currency.html" class="sidebar-link sidebar-all">Currency</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="history.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-history"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="faqs.html" class="sidebar-link sidebar-all">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQs</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div id="loader100" class="loader100">
+                <div class="lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Sidebar Navigation Ends -->
+        </aside>
+        <!-- Sidebar Ends -->
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand">
+                <button class="toggler-btn" type="button">
+                    <i class="lni lni-text-align-left"></i>
+                </button>
+            </nav>
+            <main class="p-3">
+                <div class="container-fluid">
+                    <img src="assets/images/blackImage.jpg" alt="Descriptive text about the image" class="img img-fluid">
+                    <label id="label">
+                        <input type="checkbox" id="inp">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+
+
+
+
+                <div class="container my-5">
+                    <h1 class="text-center text-light mt-5 mb-2" id="text">History
+                        of measurement units</h1>
+                    <br>
+                    <div class="container my-3 mb-5 text-center">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#length" style="--clr:#ffffff" id="a"
+                                    class="btn"><span>LENGTH</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#area" style="--clr:#ffffff" id="a" class="btn"><span>AREA</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#volume" style="--clr:#ffffff" id="a"
+                                    class="btn"><span>VOLUME</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#mass" style="--clr:#ffffff" id="a" class="btn"><span>MASS</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#temp" style="--clr:#ffffff" id="a"
+                                    class="btn"><span>TEMPERATURE</span><i></i></a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-3 mb-sm-3 mb-2">
+                                <a href="#currency" style="--clr:#ffffff" id="a"
+                                    class="btn"><span>CURRENCY</span><i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <p class="text-start fs-5" data-aos="fade-up">The creation of the decimal Metric System at the time
+                        of the French
+                        Revolution and
+                        the subsequent deposition
+                        of two platinum standards representing the meter and the kilogram, on 22 June 1799, in the
+                        Archives de la
+                        République in Paris can be seen as the first step in the development of the present
+                        International System of
+                        Units.</p>
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        In 1832, Gauss strongly promoted the application of this Metric System, together with the second
+                        defined in
+                        astronomy, as a coherent system of units for the physical sciences. Gauss was the first to make
+                        absolute
+                        measurements of the earth’s magnetic force in terms of a decimal system based on the three
+                        mechanical units
+                        millimeter, gram and second for, respectively, the quantities length, mass and time. In later
+                        years, Gauss
+                        and Weber extended these measurements to include electrical phenomena </p>
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        These applications in the field of electricity and magnetism were further developed in the 1860s
+                        under the
+                        active leadership of Maxwell and Thomson through the British Association for the Advancement of
+                        Science
+                        (BAAS). They formulated the requirement for a coherent system of units with base units and
+                        derived units. In
+                        1874 the BAAS introduced the CGS system, a three-dimensional coherent unit system based on the
+                        three
+                        mechanical units centimeter, gram and second, using prefixes ranging from micro to mega to
+                        express decimal
+                        submultiples and multiples. The following development of physics as an experimental science was
+                        largely
+                        based on this system.</p>
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        The sizes of the coherent CGS units in the fields of electricity and magnetism, proved to be
+                        inconvenient
+                        so, in the 1880s, the BAAS and the International Electrical Congress, predecessor of the
+                        International
+                        Electrotechnical Commission (IEC), approved a mutually coherent set of practical units. Among
+                        them were the
+                        ohm for electrical resistance, the volt for electromotive force, and the ampere for electric
+                        current. </p>
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        After the establishment of the Meter Convention on May, 20 1875 the CIPM concentrated on the
+                        construction of
+                        new prototypes taking the meter and kilogram as the base units of length and mass. In 1889 the
+                        1st CGPM
+                        sanctioned the international prototypes for the meter and the kilogram. Together with the
+                        astronomical
+                        second as unit of time, these units constituted a three-dimensional mechanical unit system
+                        similar to the
+                        CGS system, but with the base units meter, kilogram and second.</p>
+
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        In 1901 Giorgi showed that it is possible to combine the mechanical units of this
+                        meter–kilogram–second
+                        system with the practical electric units to form a single coherent four-dimensional system by
+                        adding to the
+                        three base units, a fourth base unit of an electrical nature, such as the ampere or the ohm, and
+                        rewriting
+                        the equations occurring in electromagnetism in the so-called rationalized form. Giorgi’s
+                        proposal opened the
+                        path to a number of new developments.</p>
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        After the revision of the Meter Convention by the 6th CGPM in 1921, which extended the scope and
+                        responsibilities of the BIPM to other fields in physics, and the subsequent creation of the CCE
+                        (now CCEM)
+                        by the 7th CGPM in 1927, the Giorgi proposal was thoroughly discussed by the IEC and the IUPAP
+                        and other
+                        international organizations. This led the CCE to recommend, in 1939, the adoption of a
+                        four-dimensional
+                        system based on the meter, kilogram, second and ampere, a proposal approved by the ClPM in
+                        1946.</p>
+
+                    <p class="text-start fs-5" data-aos="fade-up">
+                        Following an international inquiry by the BIPM, which began in 1948, the 10th CGPM, in 1954,
+                        approved the
+                        introduction of the ampere, the kelvin and the candela as base units, respectively, for electric
+                        current,
+                        thermodynamic temperature and luminous intensity. The name International System of Units (SI)
+                        was given to
+                        the system by the 11th CGPM in 1960. At the 14th CGPM in 1971 the current version of the SI was
+                        completed by
+                        adding the mole as base unit for amount of substance, bringing the total number of base units to
+                        seven.</p>
+                </div>
+
+
+                <div class="container" id="length">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">LENGTH UNITS</h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/length-conversion-chart-table-drlogy-2.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Inch Unit</h1>
+                            <p>The inch is an ancient unit of length, originating from the Roman
+                                "uncia" and later
+                                defined in
+                                medieval
+                                England as three barleycorns. It evolved through centuries of use and standardization,
+                                notably being
+                                set as
+                                2.54 centimeters in 1959. Today, it remains a widely used measure in English-speaking
+                                countries for
+                                various
+                                practical applications.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Millimeter Unit</h1>
+                            <p> The millimeter, a unit in the metric system, was introduced during
+                                the French Revolution
+                                as part
+                                of
+                                a push for a universal measurement system. It was defined as one-thousandth of a meter,
+                                which
+                                itself
+                                was based on the Earth’s meridian. Adopted globally, it’s now essential for precision in
+                                fields
+                                like
+                                science, engineering, and industry.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Feet Unit</h1>
+                            <p>The foot is an ancient unit of length, originating from measurements
+                                based on the human
+                                foot. Used
+                                by the Egyptians, Greeks, and Romans, it became standardized in medieval Europe, notably
+                                defined by
+                                England as 12 inches in the 12th century. The foot has been crucial for everyday
+                                measurements and
+                                construction, remaining a key unit in countries like the US today.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Meter Unit</h1>
+                            <p>The meter, defined during the French Revolution in 1791, was based on
+                                one ten-millionth
+                                of the
+                                distance from the equator to the North Pole along a meridian. It became the cornerstone
+                                of the
+                                metric system, designed for universal use and precision, and is now defined by the
+                                distance light
+                                travels in a vacuum in 1/299,792,458 of a second, making it fundamental in science and
+                                international
+                                measurement standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Yard Unit</h1>
+                            <p>The yard, originating from ancient measurements, was formalized in
+                                medieval England as
+                                the distance
+                                from King Henry I's nose to his outstretched thumb, approximately three feet. It became
+                                a standard
+                                unit in English-speaking countries, used for land measurement and everyday purposes, and
+                                was
+                                internationally defined in 1959 as exactly 0.9144 meters.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Mile Unit</h1>
+                            <p>The mile, rooted in Roman times as "mille passus" or "thousand paces"
+                                (approximately
+                                1,480 meters),
+                                evolved through medieval Europe and was standardized in England in the late 16th century
+                                as 5,280
+                                feet or 1,760 yards. It remains a key unit for distance measurement in the US and UK,
+                                used in
+                                contexts like road travel and land area.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Kilometer Unit</h1>
+                            <p>The kilometer, introduced during the French Revolution in the late
+                                18th century, is part
+                                of the
+                                metric system and equals one thousand meters. Designed to provide a universal and
+                                rational system of
+                                measurement, the kilometer is widely used around the world today for measuring long
+                                distances,
+                                especially in transportation and geography.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container" id="area">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">AREA UNITS</h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/area-conversion-chart-table-drlogy-2.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Inches Unit</h1>
+                            <p>
+                                Square inches, a unit for measuring area, originated in ancient times with the inch
+                                itself. Its
+                                modern use was formalized in England during the development of the Imperial system,
+                                where it
+                                measures an area of one inch by one inch. Widely used in the US and UK, it is essential
+                                for
+                                small-scale measurements in crafts, engineering, and construction.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Millimeters Unit</h1>
+                            <p> The square millimeter, a metric unit for measuring small areas, was
+                                introduced during
+                                the French
+                                Revolution alongside the metric system. It represents an area of one millimeter by one
+                                millimeter
+                                and is essential for precise measurements in science, engineering, and industry,
+                                reflecting the
+                                metric system's global adoption for its ease and uniformity in measurement.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Feet Unit</h1>
+                            <p>Square feet, a unit of area measurement, originated from ancient
+                                systems where the foot
+                                was a
+                                standard length unit. It became formalized in medieval England as the area of a square
+                                with each
+                                side measuring one foot. Widely used in the US and UK, square feet are crucial for
+                                measuring
+                                building spaces and land areas, integral to real estate and construction industries.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Meter Unit</h1>
+                            <p>The square meter, introduced during the French Revolution, is the
+                                metric system's unit
+                                for area,
+                                defined as the area of a square with one-meter sides. It was created to provide a
+                                universal,
+                                consistent measurement system, and is now the global standard for measuring large areas
+                                in fields
+                                like architecture, real estate, and land management, reflecting the metric system's
+                                widespread
+                                adoption for its simplicity and precision.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Yard Unit</h1>
+                            <p>The square yard, a unit of area measurement, originated in medieval
+                                England and
+                                represents the area
+                                of a square with each side measuring one yard. It was widely used in agriculture and
+                                land division
+                                and remains relevant today in the US and UK for measuring land, flooring, and textiles,
+                                despite the
+                                increasing use of metric measurements.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Mile Unit</h1>
+                            <p>The square mile, a unit of area measurement, dates back to Roman times
+                                and evolved with
+                                the mile
+                                itself. It was formalized in England to measure expansive land areas, representing one
+                                mile by one
+                                mile. Today, it is used in the US and UK for large-scale geographical and urban
+                                planning, reflecting
+                                historical land division practices and aiding in the management of large territories.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Acre Unit</h1>
+                            <p>The acre, an ancient unit of area, originated in medieval England as
+                                the amount of land
+                                that could be
+                                plowed by one man with an ox in a day. Traditionally defined as 66 feet by 660 feet, it
+                                was
+                                standardized in the 16th century to 43,560 square feet. Today, it's widely used in the
+                                US and UK for
+                                measuring agricultural land and real estate, reflecting its historical roots in farming
+                                and land
+                                management.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Hectare Unit</h1>
+                            <p>The hectare, introduced during the French Revolution with the metric
+                                system, is a unit of
+                                area
+                                equivalent to 10,000 square meters or 100 ares. Designed for simplicity and
+                                universality, it became
+                                the standard for large land areas, particularly in agriculture and land management, and
+                                is widely
+                                used globally, especially in countries adopting the metric system for its ease of use
+                                and
+                                consistency.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Square Kilometer Unit</h1>
+                            <p>The square kilometer, a metric unit of area measurement, was
+                                introduced during the French
+                                Revolution
+                                as part of the metric system. Defined as the area of a square with each side measuring
+                                one kilometer
+                                (1,000 meters), it facilitates the measurement of vast areas like countries and regions.
+                                Widely
+                                adopted globally, it reflects the metric system's emphasis on standardization and
+                                precision in
+                                geographic and land management contexts.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container" id="volume">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">VOLUME UNITS</h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/Unit-of-Volume.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Fluid Ounces Unit</h1>
+                            <p>
+                                Fluid ounces, a unit of volume, trace back to ancient Roman times where they were used
+                                to measure
+                                liquid capacities. The unit was refined in medieval England to denote 1/20th of a pint
+                                in the US and
+                                1/160th of a gallon in the UK. Today, fluid ounces are used in both systems for
+                                measuring small
+                                liquid volumes, crucial in cooking, medicine, and various industries, reflecting
+                                historical
+                                measurement practices and regional variations.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Milliliter Unit</h1>
+                            <p> Milliliters, a metric unit of volume, emerged during the French
+                                Revolution as part of
+                                the metric
+                                system's push for standardization. Defined as one-thousandth of a liter, it became
+                                widely adopted
+                                globally for its simplicity and precision in measuring small volumes of liquids,
+                                essential in
+                                medicine, science, and everyday use.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Gallon Unit</h1>
+                            <p>The gallon, a unit of measurement for volume, has evolved over time.
+                                Originating from
+                                medieval
+                                England, it was defined as the volume of eight pounds of wheat. In 1824, the British
+                                Imperial gallon
+                                was standardized as the volume of 10 pounds of distilled water under specified
+                                conditions. Later,
+                                the United States adopted a slightly smaller gallon, the US liquid gallon, defined in
+                                1836 as the
+                                volume of 231 cubic inches, which remains in use today.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Liter Unit</h1>
+                            <p>The liter, a metric unit of volume, was introduced during the French
+                                Revolution in 1795
+                                as part of
+                                the metric system. It was originally defined as the volume occupied by one cubic
+                                decimeter, which is
+                                a cube with sides of 0.1 meters. The liter has since become a globally accepted standard
+                                for
+                                measuring liquid volumes, particularly in science, industry, and everyday use.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Cubic Feet Unit</h1>
+                            <p>The cubic foot, a unit of volume, has been used since ancient times,
+                                likely originating
+                                from
+                                measuring the volume of grain bins or containers. It's defined as the volume of a cube
+                                with sides
+                                one foot long. Standardized during the Middle Ages, it remains a common unit in
+                                architecture,
+                                engineering, and everyday measurements, particularly in the United States and countries
+                                influenced
+                                by British imperial units.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Cubic Meter Unit</h1>
+                            <p>
+                                The cubic meter, a fundamental unit of volume in the metric system, was established
+                                during the
+                                French Revolution in 1795 as part of the metric system's adoption. It's defined as the
+                                volume of a
+                                cube with sides one meter long. Widely used worldwide in science, engineering, and
+                                commerce, the
+                                cubic meter is a standard for measuring large volumes of liquids, gases, and solid
+                                materials.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Cubic Yard Unit</h1>
+                            <p>The cubic yard, a unit of volume, dates back to medieval England,
+                                where it was used for
+                                measuring
+                                quantities of materials like grain or stone. It's defined as the volume of a cube with
+                                sides one
+                                yard long. Standardized in the United States and the United Kingdom, it remains common
+                                in
+                                construction, landscaping, and other industries for measuring large volumes of
+                                materials.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container" id="mass">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">MASS UNITS</h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/mass-conversion-chart-table-drlogy-2.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Ounces Unit</h1>
+                            <p>The ounce, a unit of mass or weight, has ancient origins dating back
+                                to various
+                                civilizations using
+                                different standards. The avoirdupois ounce, standardized in medieval England, equals
+                                1/16 of a pound
+                                and is commonly used in the United States for measuring both weight and volume (fluid
+                                ounces).</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Gram Unit</h1>
+                            <p> The gram, a metric unit of mass, was established during the French
+                                Revolution in 1795 as
+                                part of the
+                                metric system. It's defined as the mass of one cubic centimeter of water at its maximum
+                                density.
+                                Widely adopted globally, the gram is a standard unit for measuring small masses in
+                                scientific,
+                                industrial, and everyday contexts.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Pound Unit</h1>
+                            <p>The pound, a unit of weight or mass, has a long history originating
+                                from ancient Rome. It
+                                was
+                                standardized as a unit of weight in medieval England, originally defined as the weight
+                                of 240 silver
+                                pennies. Over time, it evolved into different systems such as the avoirdupois pound (16
+                                ounces),
+                                commonly used in the United States, and the troy pound (12 ounces), used for precious
+                                metals.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Kilogram Unit</h1>
+                            <p>
+                                The kilogram, a fundamental unit of mass in the metric system, was established during
+                                the French
+                                Revolution in 1795. It was originally defined as the mass of one liter of water at its
+                                maximum
+                                density. The kilogram has since become a globally accepted standard for measuring mass,
+                                replacing
+                                older systems based on physical artifacts with the adoption of the International
+                                Prototype of the
+                                Kilogram (IPK) in 1889 and its redefinition based on fundamental constants in 2019.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Short-Ton Unit</h1>
+                            <p>The short ton, a unit of weight commonly used in the United States, is
+                                equivalent to
+                                2,000 pounds. It
+                                originated from the British long ton, which is 2,240 pounds, and was standardized in the
+                                United
+                                States in the early 20th century for trade and industrial purposes. The short ton
+                                remains a standard
+                                measure in industries such as shipping, mining, and agriculture across the United
+                                States.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Mega Gram Unit</h1>
+                            <p>
+                                The megagram, often abbreviated as Mg, is a unit of mass in the metric system equivalent
+                                to one
+                                million grams or 1,000 kilograms. It is commonly used in scientific and industrial
+                                contexts,
+                                particularly for large-scale measurements of weight or mass. The term "megagram" is
+                                derived from the
+                                Greek word "mega," meaning large or great, reflecting its magnitude compared to smaller
+                                metric units
+                                like grams and kilograms.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container" id="temp">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">TEMPERATURE UNITS
+                    </h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/temperature-conversion-chart-table-drlogy-1.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Celsius Unit</h1>
+                            <p>
+                                The Celsius temperature scale, also known as the centigrade scale, is named after its
+                                Swedish
+                                inventor, Anders Celsius. It was introduced in 1742 and is based on dividing the
+                                freezing and
+                                boiling points of water into 100 equal degrees. It's widely used globally, with 0°C as
+                                the freezing
+                                point and 100°C as the boiling point of water at sea level under standard atmospheric
+                                pressure.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">Fahrenheit Unit</h1>
+                            <p>
+                                The Fahrenheit temperature scale, developed by Daniel Gabriel Fahrenheit in the early
+                                18th century,
+                                divides the freezing and boiling points of water into 180 equal divisions. 32°F is the
+                                freezing
+                                point and 212°F is the boiling point of water at standard atmospheric pressure. It
+                                remains in use
+                                primarily in the United States and a few other countries, alongside the Celsius scale
+                                used
+                                worldwide.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container" id="currency">
+
+
+                    <h1 class="text-center fw-bold text-decoration-underline mb-5">CURRENCY UNITS
+                    </h1>
+
+                    <div class="col-12 text-center mb-5">
+                        <img src="/assets/images/exchangerates1.jpg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">USD Currency</h1>
+                            <p>
+                                The United States dollar (USD) has a rich history dating back to 1792 when it was
+                                officially adopted
+                                as the country's currency. It has since become one of the world's dominant reserve
+                                currencies,
+                                widely used in international trade and finance. The USD's value is managed by the
+                                Federal Reserve,
+                                impacting global economies and financial markets due to its stability and widespread
+                                acceptance.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="text-start fw-bold mb-5">EURO Currency</h1>
+                            <p>
+                                The euro (€) was introduced on January 1, 1999, as an electronic currency for financial
+                                transactions, and later as physical notes and coins in 2002. It replaced the former
+                                national
+                                currencies of 19 of the 27 European Union member countries, promoting economic
+                                integration and
+                                stability across Europe. The euro is managed by the European Central Bank (ECB) and has
+                                become the
+                                second most traded currency in the world after the US dollar.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="border-top: 2px solid white;"></div>
+
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #000000">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Metric Conversion
+                            </h6>
+                            <p>
+                                Metric conversion is the process of converting measurements between metric units,
+                                utilizing prefixes like kilo-, centi-, and milli- for different scales within the
+                                decimal system.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Links
+                            </h6>
+                            <p>
+                                <a href="index.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Home</a>
+                            </p>
+                            <p>
+                                <a href="articles.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Articles</a>
+                            </p>
+                            <p>
+                                <a href="/conversions/length.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">Conversion</a>
+                            </p>
+                            <p>
+                                <a href="history.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">History</a>
+                            </p>
+                            <p>
+                                <a href="faqs.html"
+                                    class="text-white text-decoration-none text-hover-primary sidebar-all">FAQs</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-lg-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">Contact
+                            </h6>
+                            <p><i class="fas fa-home mr-3"></i> Aptech Learning Pakistan</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@aptech-education.com.pk</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-lg-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"
+                                style="text-decoration: 2px underline solid white; text-underline-offset: 10px;">
+                                Subscription</h6>
+
+                            <form class="subscribe">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control my-4" placeholder="Your name">
+                                    <span id="nameError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="email" class="form-control my-4"
+                                        placeholder="Your e-mail address">
+                                    <span id="emailError" class="error-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control my-4"
+                                        placeholder="Your message"></textarea>
+                                    <span id="messageError" class="error-message"></span>
+                                </div>
+                                <div class=" mt-5 mb-2">
+                                    <a style="--clr:#ffffff" id="subscribeButton"
+                                        class="btn"><span>subscribe</span><i></i></a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <hr class="container" style="color: white;">
+            <div class="text-center p-3 mt-2">
+                © 2024 Copyright :
+                <a class="text-white" href="index.html">Metric Conversion</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("r4ECdZN704rVp4X0u");
+        })();
+
+        // Your email subscription logic
+        document.getElementById('subscribeButton').addEventListener('click', function () {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const message = messageInput.value.trim();
+
+            // Clear previous error messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            let isValid = true;
+
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Please enter your name.';
+                isValid = false;
+            } else if (!isNaN(name)) { // Check if name is a number
+                document.getElementById('nameError').textContent = 'Name cannot be a number.';
+                isValid = false;
+            }
+
+            // Validate email
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Please enter your e-mail address.';
+                isValid = false;
+            } else if (!validateEmail(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid e-mail address.';
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                document.getElementById('messageError').textContent = 'Please enter your message.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Send the email
+                emailjs.send("service_x6a9hll", "template_cf0ai7v", {
+                    user_name: name,
+                    user_email: email,
+                    user_message: message
+                })
+                    .then(function (response) {
+                        console.log('Email sent successfully:', response);
+                        alert('Thank you for subscribing!');
+                        nameInput.value = ''; // Clear the name input field
+                        emailInput.value = ''; // Clear the email input field
+                        messageInput.value = ''; // Clear the message input field
+                    }, function (error) {
+                        console.error('Failed to send the email:', error);
+                        alert('Failed to send the email. Please try again later.');
+                    });
+            }
+        });
+
+        // Function to validate email format
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+    <script src="assets/js/history.js"></script>
+
+
+</body>
+
+</html>
